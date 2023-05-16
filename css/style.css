@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.intro-website {
+    background-color: #161818;
+    color: #6d686c;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background: linear-gradient(to bottom, #161818, #000);
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: linear-gradient(to bottom, #000, #161818);
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.footer .navbar {
+    list-style: none;
+    float: left;
+}
+
+.footer .navbar .nav-item {
+    float: left;
+    padding: 8px 10px;
+}
+
+.footer .navbar .nav-item .nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #b2b2b2;
+    font-weight: bold;
+    padding-bottom: 3px;
+    transition: 0.4s;
+}
+
+.header .navbar {
+    list-style: none;
+    float: left;
+}
+
+.header .navbar .nav-item {
+    float: left;
+    padding: 8px 10px;
+}
+
+.header .navbar .nav-item .nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #b2b2b2;
+    font-weight: bold;
+    padding-bottom: 3px;
+    transition: 0.4s;
+}
+
+.header .navigation .navbar .nav-item .nav-link:hover {
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.header .navigation-account .navbar .nav-item .nav-link:hover {
+    color: #1500ff;
+}
+
+.img-logo .image {
+    width: 140px;
+    padding-top: 15px;
+}
+
+section {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 45px 0;
+    z-index: 1;
+}
+
+section a {
+    padding: 12px 59px;
+    border: 4px double #6d686c;
+    color: #f9f9f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: transparent;
+    font-size: 18px;
+}
+
+.maps {
+    background-image: url('../img/dennis-kummer-52gEprMkp7M-unsplash.jpg');
+}
+
+.maps p, .moto p, .des {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #b2b2b2;
+}
+
+.maps h3, .moto h3 {
+    text-align: center;
+    font-size: 36px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: #b2b2b2;
+    padding-bottom: 7px;
+}
+
+.moto {
+    background-image: url('../img/max-bottinger-Gup8MCvSsf0-unsplash.jpg');
+}
+
+.footer img {
+    width: 30px;
+}
+
+.design {
+    background-image: url('../img/2hq4c60xz8jvpsp0xalxazjq1.jpg');
+}
+
+.design p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.design h3 {
+    text-align: center;
+    font-size: 36px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: #000000;
+    padding-bottom: 7px;
+}
+
+#btn-order {
+    background-color: #000000;
+}
+
+#btn-more {
+    background-color: #fffdfd;
+    color: #000;
+}
+
+.tesla {
+    background-image: url('../img/52a2c01e7427101a9aba4ce0cd7e20f9.jpg');
+}
