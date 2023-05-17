@@ -111,8 +111,9 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0 45px 0;
+    padding: 20px 20px 45px 20px;
     z-index: 1;
+    transition: 10.0s;
 }
 
 section a {
@@ -183,4 +184,52 @@ section a {
 
 .tesla {
     background-image: url('../img/52a2c01e7427101a9aba4ce0cd7e20f9.jpg');
+}
+
+.card {
+    width: 380px;
+    height: auto;
+    padding: 20px 15px;
+    
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 25px;
+    transition: 0.5s;
+    
+}
+
+.card:hover {
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+main h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #161818;
+    text-align: start;
+}
+
+main {
+    padding: 50px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main img {
+    width: 350px;
+    height: 200px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+main h4 {
+    text-transform: uppercase;
+    color: red;
+    padding: 10px 0;
 }
