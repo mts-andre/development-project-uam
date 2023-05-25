@@ -9,7 +9,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&family=Noto+Sans:wght@100;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="img/tesla-logo-8.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
         <script src="https://kit.fontawesome.com/442ac4d6eb.js" crossorigin="anonymous"></script>
+        <script>
+            const elementos = document.querySelectorAll('.elemento');
+            const animarElemento = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.style.opacity = '1'; /* Altera a opacidade para 1 */
+                entry.target.style.transform = 'translateY(0)'; /* Move o elemento para sua posição original */
+                observer.unobserve(entry.target); /* Para de observar o elemento após a animação ser aplicada */
+                }
+            });
+            };
+
+            const observer = new IntersectionObserver(animarElemento, { threshold: 0.5 });
+
+            elementos.forEach(elemento => {
+            observer.observe(elemento); /* Observa cada elemento */
+            });
+        </script>
         <title>Tesla Delivery</title>
     </head>
 
@@ -57,7 +77,7 @@
                         A Tesla sente orgulho em apresentar o novo modelo C, uma moto automatizada que visa entregar sua mercadoria de forma mais rápida, segura e tecnológica.
                     </p>
                 </div>
-                <a href="#">Veja mais</a>
+                <a href="#" class="buttonn">Veja mais</a>
             </section>
 
             <section class="moto">
@@ -67,7 +87,7 @@
                         Nossas motos visam entregar ao cliente a melhor experiência possível, principalmente em questão de segurança, desevolvemos o novo aplicativo Tesla Motors, onde será possível localizar sua encomenda em tempo real, acompanhar o trajeto e obter códigos de segurança para desbloquear o baú da moto assim que for entregue em seu endereço.
                     </p>
                 </div>
-                <a href="#">Veja mais</a>
+                <a href="#" class="buttonn">Veja mais</a>
             </section>
 
             <section class="design">
