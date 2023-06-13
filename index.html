@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
+    <!-- Metainformações -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/tesla-logo-8.png" type="image/x-icon">
+        <title>Tesla Delivery</title>
+        
+        <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        
+         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&family=Noto+Sans:wght@100;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="img/tesla-logo-8.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+        
+        <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/442ac4d6eb.js" crossorigin="anonymous"></script>
-        <script>
-            const elementos = document.querySelectorAll('.elemento');
-            const animarElemento = (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                entry.target.style.opacity = '1'; /* Altera a opacidade para 1 */
-                entry.target.style.transform = 'translateY(0)'; /* Move o elemento para sua posição original */
-                observer.unobserve(entry.target); /* Para de observar o elemento após a animação ser aplicada */
-                }
-            });
-            };
-
-            const observer = new IntersectionObserver(animarElemento, { threshold: 0.5 });
-
-            elementos.forEach(elemento => {
-            observer.observe(elemento); /* Observa cada elemento */
-            });
-        </script>
-        <title>Tesla Delivery</title>
     </head>
-
+    
+    <!-- Corpo visível da página web -->
     <body>
+        <!-- Container principal para armazenamento de todo o conteúdo -->
         <div class="container">
+            
+            <!-- Introdução -->
             <div class="intro-website">
                 <p>
                     Crédito fiscal de até US$ 7.500 disponível para o Modelo Y e o Modelo 3. Saiba mais
                 </p>
             </div>
+            
+            <!-- Cabeçalho -->
             <header class="header">
                 <div class="img-logo">
                     <img src="img/tesla-logo.png" alt="Tesla" class="image">
                 </div>
-
+                    
+                <!-- Barra de navegação -->
                 <nav class="navigation">
                     <ul class="navbar">
                         <li class="nav-item"><a href="#" class="nav-link">Modelo 5</a></li>
@@ -65,7 +60,8 @@
                     </ul>
                 </nav>
             </header>
-
+            
+            
             <section class="tesla">
                 
             </section>
